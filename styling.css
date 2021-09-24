@@ -1,0 +1,223 @@
+body {
+    font-family: Open Sans,sans-serif;
+    margin: 0 0;
+}
+#container {
+    border: none;
+    width: auto;
+}
+
+#header {
+    height: 100px;
+    padding: 10px 0;
+    width: 1250px;
+    margin: 0 auto;
+}
+#brand {
+    float: left;
+}
+
+h1 a {
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(46, 61, 73);
+    text-decoration: none;
+}
+
+#searchBox {
+    float: right;
+    background: linear-gradient(#017A9B, #057595);
+    width: 550px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.text {
+    float: left;
+    font-size: 15px;
+    width: 300px;
+    padding: 10px 15px 10px 15px;
+    color: rgb(46, 61, 73);
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    background-image: url(images/searchicon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.submit {
+    float: right;
+    padding: 10px 15px 10px 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(46, 61, 73);
+    background: white;
+    font-size: 15px;
+    border: white;
+    border-radius: 0.25ch;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu {
+    height: 50px;
+    background: linear-gradient(#017A9B, #057595);
+    padding: 5px 0;
+    width: auto;
+}
+
+#menu ul {
+    list-style: none;
+    width: 1250px;
+    margin: 10px auto;
+}
+
+#menu ul li:last-child{
+    border-right: none;
+}
+
+#menu ul li {
+    float: left;
+    padding: 0 70px;
+    height: 30px;
+    border-right: 1px solid rgb(46, 61, 73);
+}
+
+#menu ul li a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-size: 17px;
+    color: rgb(46, 61, 73);
+    line-height: 30px;
+    -webkit-transition: font-size 0.2s linear;
+    -moz-transition: font-size 0.2s linear;
+    -o-transition: font-size 0.2s linear;
+    -ms-transition: font-size 0.2s linear;
+    transition: font-size 0.2s linear;
+}
+
+#menu ul li a:hover , #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#introduction {
+    background: url(images/bg.jpg);
+    background-size: cover;
+    background-color: rgb(46, 61, 73);
+    height: 350px;
+    background-repeat: no-repeat;
+    width: 1250px;
+    color: white;
+    padding: 30px;
+    margin: 20px auto;
+    background-blend-mode:soft-light;
+}
+
+#introduction h3 {
+    margin-top: 75px;
+    font-size: 45px;
+    color: white;
+    font-weight: normal;
+    text-align: right;
+}
+
+#introduction p {
+    font-size: 20px;
+    color: white;
+    text-align:right;
+    margin-left: 700px;
+}
+
+#content {
+    width: 1250px;
+    border: none;
+    margin: 20px auto;
+}
+
+.sidebar {
+    height: 575px;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(21,34,58,.13);
+    padding: 10px 30px;
+    -webkit-transition: box-shadow 0.2s linear;
+    -moz-transition: box-shadow 0.2s linear;
+    -o-transition: box-shadow 0.2s linear;
+    -ms-transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+}
+
+.sidebar:hover {
+    box-shadow: 10px 10px 25px rgba(21,34,58,.13);
+}
+
+.sidebar h3 {
+    color: #017A9B;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.sidebar ul {
+    padding-top: 15px;
+    list-style: none;
+}
+
+#leftsidebar ul li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    list-style-image: url(images/arrow_icon.png);
+}
+
+#rightsidebar ul li {
+    padding-bottom: 48px;
+    padding-left: 40px;
+    background: url(images/tick_icon.png);
+    background-repeat: no-repeat;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(46, 61, 73);
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #017A9B;
+    font-size: 22px;
+    font-weight: bold;
+    -webkit-transition: font-size 0.2s ease;
+    -moz-transition: font-size 0.2s ease;
+    -o-transition: font-size 0.2s ease;
+    -ms-transition: font-size 0.2s ease;
+    transition: font-size 0.2s ease;
+}
+
+#leftsidebar {
+    float: left;
+}
+
+#rightsidebar {
+    float: right;
+}
+
+.footer {
+    height: 100px;
+    background: #F1F9FA;
+    margin-top: 20px;   
+}
+
+.footer .copyright {
+    padding: 30px 30px;
+    font-size: 13px;
+    width: 1250px;
+    margin: 0 auto;
+}
