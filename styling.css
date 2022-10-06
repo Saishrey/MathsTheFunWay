@@ -79,6 +79,7 @@ h1 a {
     font-size: 15px;
     border: white;
     border-radius: 0.25ch;
+    cursor: pointer;
 }
 
 .submit:hover {
