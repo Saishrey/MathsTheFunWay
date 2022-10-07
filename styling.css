@@ -256,6 +256,11 @@ h1 a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(46, 61, 73);
+    transition: font-size 0.2s ease;
+    -webkit-transition: font-size 0.2s ease;
+    -moz-transition: font-size 0.2s ease;
+    -ms-transition: font-size 0.2s ease;
+    -o-transition: font-size 0.2s ease;
 }
 
 .sidebar ul li a:hover, .sidebar ul li a.active{
@@ -263,11 +268,6 @@ h1 a {
     color: #017A9B;
     font-size: 22px;
     font-weight: bold;
-    -webkit-transition: font-size 0.2s ease;
-    -moz-transition: font-size 0.2s ease;
-    -o-transition: font-size 0.2s ease;
-    -ms-transition: font-size 0.2s ease;
-    transition: font-size 0.2s ease;
 }
 
 .footer {
