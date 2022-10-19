@@ -1,5 +1,5 @@
 body {
-    font-family: Open Sans,sans-serif;
+    font-family: Open Sans, sans-serif;
     margin: 0 0;
     padding: 0;
 }
@@ -24,6 +24,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 #brand {
     flex: 50%;
     min-width: 550px;
@@ -137,7 +138,8 @@ h1 a {
     transition: font-size 0.2s linear;
 }
 
-#items a:hover , #items a.active {
+#items a:hover,
+#items a.active {
     font-size: 20px;
     font-weight: bolder;
     color: white;
@@ -183,7 +185,7 @@ h1 a {
 #introduction p {
     font-size: 14px;
     color: white;
-    text-align:left;
+    text-align: left;
     width: fit-content;
 }
 
@@ -211,7 +213,7 @@ h1 a {
     width: 100%;
     flex: 50%;
     border-radius: 10px;
-    box-shadow: 0 5px 25px rgba(21,34,58,.13);
+    box-shadow: 0 5px 25px rgba(21, 34, 58, .13);
     padding: 10px 30px;
     -webkit-transition: box-shadow 0.2s linear;
     -moz-transition: box-shadow 0.2s linear;
@@ -221,7 +223,7 @@ h1 a {
 }
 
 .sidebar:hover {
-    box-shadow: 10px 10px 25px rgba(21,34,58,.13);
+    box-shadow: 10px 10px 25px rgba(21, 34, 58, .13);
 }
 
 .sidebar h3 {
@@ -263,7 +265,8 @@ h1 a {
     -o-transition: font-size 0.2s ease;
 }
 
-.sidebar ul li a:hover, .sidebar ul li a.active{
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
     text-decoration: none;
     color: #017A9B;
     font-size: 22px;
@@ -275,7 +278,7 @@ h1 a {
     background: black;
     margin-top: 20px;
     color: white;
-    display:flex;
+    display: flex;
 }
 
 .footer .copyright {
@@ -283,9 +286,33 @@ h1 a {
     font-size: 13px;
     width: 1250px;
     margin: 0 auto;
-    text-align: center ;
+    text-align: center;
 }
 
-#footer{
-    position:relative;
+#footer {
+    position: relative;
+}
+
+.footer-links #facebook:hover {
+    background-color: #3b5998;
+}
+
+.footer-links #instagram:hover {
+    background-color: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.footer-links #twitter:hover{
+    background-color: #00acee;
+}
+
+.footer-links #github:hover{
+    background-color: grey;
+}
+
+.footer-links #dribble:hover{
+    background-color: #ff8833;
 }
