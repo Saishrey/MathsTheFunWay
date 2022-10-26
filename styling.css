@@ -4,6 +4,7 @@ body {
     margin: 0 0;
     padding: 0;
     background-color: #EEF1FF;
+    height: 100vh;
 }
 
 * {

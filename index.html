@@ -6,6 +6,7 @@
     <title>Maths The Fun Way</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="popup.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -689,10 +690,20 @@
             </div>
         </footer>
 
+        <!-- popup -->
+        <div id="backdrop" class="backdrop" style="display: none">
+          <div id="popup" class="popup">
+            <img title="image title" src="https://gifimage.net/wp-content/uploads/2018/06/tick-gif.gif" style="width: 70px; margin-top: 12px;">
+            <h1>Sign Up with Us!</h1>
+            <a href="signup.htlm">OK</a>
+            <a href="/">Cancel</a>
+          </div>
+        </div>
     </div>
 
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="popup.js"></script>
 </body>
 
 </html>
