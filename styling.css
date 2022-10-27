@@ -1,7 +1,9 @@
 body {
+    --base-color: #277BC0;
     font-family: Open Sans, sans-serif;
     margin: 0 0;
     padding: 0;
+    background-color: #EEF1FF;
 }
 
 * {
@@ -23,7 +25,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: whitesmoke;
 }
 
 #brand {
@@ -34,14 +35,16 @@ body {
 
 h1 a {
     font-size: 50px;
-    font-weight: normal;
+    font-weight: 1000;
     color: rgb(46, 61, 73);
     text-decoration: none;
+    text-shadow: 1px 1px #00acee;
 }
 
 #searchBox {
     flex: 50%;
-    background: linear-gradient(#017A9B, #057595);
+    /* background: linear-gradient(#017A9B, #057595); */
+    background-color: var(--base-color);
     min-width: 300px;
     height: auto;
     margin: 1em 0;
@@ -97,19 +100,13 @@ h1 a {
     -o-transform: translateY(1px);
 }
 
-
-@media screen and (max-width: 600px) {
-    .submit {
-        display: none;
-    }
-}
-
 .clear {
     clear: both;
 }
 
 #menu {
-    background: linear-gradient(#017A9B, #057595);
+    /* background: linear-gradient(#017A9B, #057595); */
+    background-color: var(--base-color);
     padding: 20px 0;
     width: auto;
 }
@@ -216,7 +213,8 @@ h1 a {
 }
 
 .sidebar h3 {
-    color: #017A9B;
+    /* color: #017A9B; */
+    color: var(--base-color);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
@@ -304,6 +302,12 @@ h1 a {
 
 .footer-links #dribble:hover{
     background-color: #ff8833;
+}
+
+@media screen and (max-width: 600px) {
+    .submit {
+        display: none;
+    }
 }
 
 /* small screens: vertical menu */
