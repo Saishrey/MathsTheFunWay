@@ -17,17 +17,19 @@ body {
 }
 
 #header {
-    width: 90%;
-    max-width: 1225px;
-    margin: 0 auto;
+    width: 100%;
+    /* max-width: 1225px; */
+    /* margin: 0 auto; */
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    background-color: whitesmoke;
 }
 
 #brand {
     flex: 50%;
     min-width: 550px;
+    text-align: center;
 }
 
 h1 a {
@@ -145,23 +147,10 @@ h1 a {
     color: white;
 }
 
-/* small screens: vertical menu */
-@media screen and (max-width: 720px) {
-    #items {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #items a {
-        border-right: none;
-        width: 100%;
-    }
-}
-
 #introduction {
     background: url(images/bg.jpg);
     background-size: cover;
-    background-color: rgb(46, 61, 73);
+    background-color: rgba(0, 0, 0, 0.6);
     min-height: 350px;
     background-repeat: no-repeat;
     max-width: 1250px;
@@ -315,4 +304,17 @@ h1 a {
 
 .footer-links #dribble:hover{
     background-color: #ff8833;
+}
+
+/* small screens: vertical menu */
+@media screen and (max-width: 720px) {
+    #items {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #items a {
+        border-right: none;
+        width: 100%;
+    }
 }
