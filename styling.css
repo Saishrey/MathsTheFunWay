@@ -7,6 +7,23 @@ body {
     height: 100vh;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    background-color: whitesmoke;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #84afd3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6a8daa; 
+}
+
 * {
     box-sizing: border-box;
 }
