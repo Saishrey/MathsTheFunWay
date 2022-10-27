@@ -1,10 +1,7 @@
 body {
-    --base-color: #277BC0;
     font-family: Open Sans, sans-serif;
     margin: 0 0;
     padding: 0;
-    background-color: #EEF1FF;
-    height: 100vh;
 }
 
 * {
@@ -20,32 +17,29 @@ body {
 }
 
 #header {
-    width: 100%;
-    /* max-width: 1225px; */
-    /* margin: 0 auto; */
+    width: 90%;
+    max-width: 1225px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 #brand {
     flex: 50%;
     min-width: 550px;
-    text-align: center;
 }
 
 h1 a {
     font-size: 50px;
-    font-weight: 1000;
+    font-weight: normal;
     color: rgb(46, 61, 73);
     text-decoration: none;
-    text-shadow: 1px 1px #00acee;
 }
 
 #searchBox {
     flex: 50%;
-    /* background: linear-gradient(#017A9B, #057595); */
-    background-color: var(--base-color);
+    background: linear-gradient(#017A9B, #057595);
     min-width: 300px;
     height: auto;
     margin: 1em 0;
@@ -101,13 +95,19 @@ h1 a {
     -o-transform: translateY(1px);
 }
 
+
+@media screen and (max-width: 600px) {
+    .submit {
+        display: none;
+    }
+}
+
 .clear {
     clear: both;
 }
 
 #menu {
-    /* background: linear-gradient(#017A9B, #057595); */
-    background-color: var(--base-color);
+    background: linear-gradient(#017A9B, #057595);
     padding: 20px 0;
     width: auto;
 }
@@ -145,10 +145,23 @@ h1 a {
     color: white;
 }
 
+/* small screens: vertical menu */
+@media screen and (max-width: 720px) {
+    #items {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #items a {
+        border-right: none;
+        width: 100%;
+    }
+}
+
 #introduction {
     background: url(images/bg.jpg);
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(46, 61, 73);
     min-height: 350px;
     background-repeat: no-repeat;
     max-width: 1250px;
@@ -214,8 +227,7 @@ h1 a {
 }
 
 .sidebar h3 {
-    /* color: #017A9B; */
-    color: var(--base-color);
+    color: #017A9B;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 30px;
@@ -303,23 +315,4 @@ h1 a {
 
 .footer-links #dribble:hover{
     background-color: #ff8833;
-}
-
-@media screen and (max-width: 600px) {
-    .submit {
-        display: none;
-    }
-}
-
-/* small screens: vertical menu */
-@media screen and (max-width: 720px) {
-    #items {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #items a {
-        border-right: none;
-        width: 100%;
-    }
 }
